@@ -1,0 +1,22 @@
+{
+  "name": "nexo-crm",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @nexo/web",
+    "build": "npm run build --workspace @nexo/web",
+    "start": "npm run start --workspace @nexo/web",
+    "typecheck": "npm run typecheck --workspace @nexo/web",
+    "test:e2e": "playwright test"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@axe-core/playwright": "4.13.0"
+  }
+}
